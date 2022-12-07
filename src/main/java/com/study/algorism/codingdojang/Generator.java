@@ -20,7 +20,7 @@ public class Generator {
             System.out.println(isSelfNum[i]);
         }
 
-        System.out.println(getNum(91));
+        System.out.println(getNum(11));
 
     }
 }
