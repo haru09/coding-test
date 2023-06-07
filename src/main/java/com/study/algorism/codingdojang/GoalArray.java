@@ -22,13 +22,18 @@ public class GoalArray {
         List<String> arr1 = new ArrayList<>(Arrays.asList(cards1));
         List<String> arr2 = new ArrayList<>(Arrays.asList(cards2));
 
+        // 막간 스트림 테스트
         Arrays.asList(cards1).stream().forEach(item -> System.out.print(item+" "));
         Arrays.asList(cards2).stream().forEach(item -> System.out.print(item+" "));
 
         arr1.stream().forEach(item -> System.out.print(item+" "));
         arr2.stream().forEach(item -> System.out.print(item+" "));
 
-
+        /*
+        * 배열의 첫번째만 비교.
+        * 이 후 없을 경우엔 완성된 문장이 나오지 않음.
+        * 배열 전체를 비교하지 않기 때문에 좀 더 가벼운 코드가 됨
+        * */
         for(int i=0; i<GOAL.length; i++) {
             if( !arr1.isEmpty() && GOAL[i].equals(arr1.get(0))) {
                 isEqual = true;
