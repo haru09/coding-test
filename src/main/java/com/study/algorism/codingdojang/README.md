@@ -50,3 +50,6 @@ n을 d(n)의 생성자라고 한다. 위의 수열에서 33은 39의 생성자�
    cards1                  cards2          goal                                    result
    ["i", "drink", "water"]	["want", "to"]	["i", "want", "to", "drink", "water"]	"Yes"
    ["i", "water", "drink"]	["want", "to"]	["i", "want", "to", "drink", "water"]	"No"
+
+#로또의 최고 순위와 최저 순위
+https://school.programmers.co.kr/learn/courses/30/lessons/77484?language=java
