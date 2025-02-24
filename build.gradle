@@ -7,6 +7,23 @@ plugins {
 group 'com.study'
 version '1.0-SNAPSHOT'
 
+/* 
+* toolchain 설정
+* */
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
+
+/*
+직접 설정
+tasks.withType(JavaCompile).configureEach {
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
+}
+* */
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor

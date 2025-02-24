@@ -1,1 +1,11 @@
 #It won't be uploaded
+
+# Compiled class file
+*.class
+
+### Project Patch ###
+# Gradle
+.gradle/
+
+#IntelliJ config
+.idea
